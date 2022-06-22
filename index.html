@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>video gallery(fully responsive)</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- <div class="left">Made By Ravi </div>
+    <div class="mid">MY VIDEO GALLERY</div>
+    <div class="right">Made By Ravi </div> -->
+
+    <div class="container">
+      <div class="video-container">
+        <div class="video">
+          <video src="video1.mp4"></video>
+        </div>
+        <div class="video">
+          <video src="vid-1.mp4"></video>
+        </div>
+        <div class="video">
+          <video src="vid-2.mp4"></video>
+        </div>
+        <div class="video">
+          <video src="video1.mp4"></video>
+        </div>
+        <div class="video">
+          <video src="vid-3.mp4"></video>
+        </div>
+        <div class="video">
+          <video src="video3.mp4"></video>
+        </div>
+        <div class="video">
+          <video src="vid-4.mp4"></video>
+        </div>
+        <div class="video">
+          <video src="video1.mp4"></video>
+        </div>
+        <div class="video">
+          <video src="vid-5.mp4"></video>
+        </div>
+        <div class="video">
+          <video src="video2.mp4"></video>
+        </div>
+        <div class="video">
+          <video src="vid-7.mp4"></video>
+        </div>
+        <div class="video">
+          <video src="vid-8.mp4"></video>
+        </div>
+      </div>
+    </div>
+    <script>
+      var video = document.querySelectorAll("video");
+      video.forEach((Play) =>
+        Play.addEventListener("click", () => {
+          Play.classList.toggle("active");
+          if (Play.paused) {
+            Play.play();
+          } else {
+            Play.pause();
+            Play.currentTime = 0;
+          }
+        })
+      );
+    </script>
+  </body>
+</html>
